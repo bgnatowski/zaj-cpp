@@ -62,20 +62,20 @@ int RegHister2::Run(double zad, double rzecz){
 	if (err > 0){
 		if (err < l)
 			y = 0;
-		else if (err >= l && err < h)
-			y = 1;
 		else if (err >= h && err < L)
 			y = 1;
-		else if (err >= L)
+		else if (err >= L && err < H)
+			y == 2 ? y = 2 : y = 1;
+		else if (err >= H)
 			y = 2;
 	} else if ( err < 0){
 		if (err > -l)
 			y = 0;
-		else if (err <= -l && err > -h)
-			y = -1;
 		else if (err <= -h && err > -L)
 			y = -1;
-		else if (err <= -L)
+		else if (err <= -L && err > -H)
+			y == -2 ? y = -2 : y = -1;
+		else if (err <= -H)
 			y = -2;
 	}
 
