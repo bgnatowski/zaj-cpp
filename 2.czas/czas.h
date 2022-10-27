@@ -50,28 +50,15 @@ private:
 	int HH, MM, SS, sss;
 	bool sign;
 
-	private void normaliseMs(int &s, int &ms){
-		if (ms > 999){
-			int howManyTimes = ms % 1000;
-			ms = ms - howManyTimes * 1000;
-			s += howManyTimes;
-		}
-	}
+	private void normalise(int &h, int &m, int &s, int &ms){
+		ms += s * 1000;
+		ms += m * 60 * 1000;
+		ms += h * 60 * 60 * 1000;
 
-	private void normaliseMs(int &m, int &s){
-		if (s > 59){
-			int howManyTimes = ms % 60;
-			s = s - howManyTimes * 60;
-			m += howManyTimes;
-		}
-	}
-
-	private void normaliseM(int &h, int &ms){
-		if (m > 59){
-			int howManyTimes = m % 60;
-			m = m - howManyTimes * 60;
-			h += howManyTimes;
-		}
+		h = ms / (60*60*1000);
+		m = ((ms / (60*1000))) % 60;
+		s = (ms / 1000) % 60;
+		ms = ms % 1000;
 	}
 
 	private void setAll(int h, int m, int s, int ms){
