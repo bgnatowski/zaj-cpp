@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1447086557 source:d:\zbyszek\moje dokumenty\dydaktyka\2016-17\jcc-2016-17\jcc-lab-h16\jcc_e4\gr1_sr1230\3.czas\czas.cpp
+	<cmath>
+	"czas.h"
+
+1447086125 d:\zbyszek\moje dokumenty\dydaktyka\2016-17\jcc-2016-17\jcc-lab-h16\jcc_e4\gr1_sr1230\3.czas\czas.h
+
+1447086557 source:d:\zbyszek\moje dokumenty\dydaktyka\2016-17\jcc-2016-17\jcc-lab-instrukcje\codeexamples\czas-codeblocks\czas.cpp
+	<cmath>
+	"czas.h"
+
+1447086125 d:\zbyszek\moje dokumenty\dydaktyka\2016-17\jcc-2016-17\jcc-lab-instrukcje\codeexamples\czas-codeblocks\czas.h
+
+1478591504 source:d:\zbyszek\moje dokumenty\dydaktyka\2016-17\jcc-2016-17\jcc-lab-instrukcje\codeexamples\czas-codeblocks\czastest.cpp
+	<iostream>
+	"czas.h"
+
+1447090157 source:d:\zbyszek\moje dokumenty\dydaktyka\2017-18\jcc-2017-18\jcc-lab-instrukcje\codeexamples\czas-2017-codeblocks\czas.cpp
+	<cmath>
+	"czas.h"
+
+1447089725 d:\zbyszek\moje dokumenty\dydaktyka\2017-18\jcc-2017-18\jcc-lab-instrukcje\codeexamples\czas-2017-codeblocks\czas.h
+
+1635413462 source:d:\zbyszek\moje dokumenty\dydaktyka\2021-22\jcc-2021-22\jcc-lab-instrukcje\codeexamples\czas-2021-codeblocks\czastest.cpp
+	<iostream>
+	"czas.h"
+
+1635414610 d:\zbyszek\moje dokumenty\dydaktyka\2021-22\jcc-2021-22\jcc-lab-instrukcje\codeexamples\czas-2021-codeblocks\czas.h
+
+1635414752 source:d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjepelne\2.czas\czas.cpp
+	<cmath>
+	"czas.h"
+
+1635414610 d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjepelne\2.czas\czas.h
+
+1635413462 source:d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjepelne\2.czas\czastest.cpp
+	<iostream>
+	"czas.h"
+
+1664191516 source:d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjedolab\2.czas\czastest.cpp
+	<iostream>
+	"czas.h"
+
+1664192104 d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjedolab\2.czas\czas.h
+
