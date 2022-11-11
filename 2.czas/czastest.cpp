@@ -1,10 +1,11 @@
 
+
 /***************************************************************
 *
 * Plik czastest.cpp
-* Program do testowania klasy Czas z æwiczenia JCC-C02
+* Program do testowania klasy Czas z ï¿½wiczenia JCC-C02
 *
-* Autor: Zbigniew Mikoœ
+* Autor: Zbigniew Mikoï¿½
 *
 ***************************************************************/
 
