@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1667934407 source:d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjepelne\3.gray\gray.cpp
+	"gray.h"
+
+1667934407 d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjepelne\3.gray\gray.h
+
+1667931433 source:d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjepelne\3.gray\bin2txt.cpp
+	<string>
+	"bin2txt.h"
+
+1667931749 d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjepelne\3.gray\bin2txt.h
+	<string>
+
+1667936684 source:d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjedolab\3.gray\graytest.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"int2bintext.h"
+	"gray.h"
+
+1667936684 d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjedolab\3.gray\int2bintext.h
+	<string>
+
+1667934407 d:\zbyszek\moje dokumenty\dydaktyka\2022-23\jcc-2022-23\jcc-lab-cwiczenia\wersjedolab\3.gray\gray.h
+
+1668068190 source:c:\student\jcc_e4\gr1_cz0800\3.gray\gray.cpp
+	<string>
+	"gray.h"
+
+1668067572 c:\student\jcc_e4\gr1_cz0800\3.gray\gray.h
+
+1667936686 source:c:\student\jcc_e4\gr1_cz0800\3.gray\graytest.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"int2bintext.h"
+	"gray.h"
+
+1667936686 c:\student\jcc_e4\gr1_cz0800\3.gray\int2bintext.h
+	<string>
+
+1668067968 source:c:\student\jcc_e4\gr1_cz0800\3.gray\int2bintext.cpp
+	<string>
+	"int2bintext.h"
+
