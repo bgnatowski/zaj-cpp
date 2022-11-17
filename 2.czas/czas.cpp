@@ -8,9 +8,7 @@
 ***************************************************************/
 
 #include <cmath>
-
 #include "czas.h"
-
 //-------------------------------------------------------------
 
 // Tutaj nale�y zdefiniowa� metody klasy Czas
@@ -43,25 +41,34 @@ Czas::Czas(double x){
 }
 
 Czas& Czas::operator+=(const Czas& x){
-	HH+= x.h();
-	MM+= x.m();
-	SS+= x.s();
-	sss+= x.ms();
+	long int xLong = x;
+	long int thisLong = convertToLongInt();
+	long int newThis = thisLong+=xLong;
 
+	if(newThis < 0 ) m_sign = true;
+	else m_sign = false;
+
+	timeFromLongInt(newThis);
 	normalise();
 	return *this;
 }
 
 Czas& Czas::operator-=(const Czas& x){
-	HH-= x.h();
-	MM-= x.m();
-	SS-= x.s();
-	sss-= x.ms();
+	long int xLong = x;
+	long int thisLong = convertToLongInt();
+	long int newThis = thisLong-=xLong;
+
+	if(newThis < 0 ) m_sign = true;
+	else m_sign = false;
+
+	timeFromLongInt(newThis);
+	normalise();
+	return *this;
+
 	if(HH <= 0 && MM <= 0 && SS <= 0 && sss <= 0){
 		HH = MM = SS = sss = 0;
-		return *this;
+		m_sign = false;
 	}
-	normalise();
 	return *this;
 }
 
@@ -130,26 +137,59 @@ Czas operator - (const Czas x1, const Czas x2){
 }
 
 bool operator > (const Czas x1, const Czas x2){
-	return ( (x1.h() > x2.h()) && (x1.m() > x2.m()) && (x1.s() > x2.s()) && (x1.ms() > x2.ms()) );
+	long int	tLong1 = x1;
+	long int	tLong2 = x2;
+	if (x1.sign()==true && x2.sign() ==false)
+		return false;
+	else if(x1.sign()==false && x2.sign() ==true)
+		return true;
+	else
+		return (tLong1 > tLong2);
 }
 
+
 bool operator >= (const Czas x1, const Czas x2){
-	return ( (x1.h() >= x2.h()) && (x1.m() >= x2.m()) && (x1.s() >= x2.s()) && (x1.ms() >= x2.ms()) );
+	long int	tLong1 = x1;
+	long int	tLong2 = x2;
+	if (x1.sign()==true && x2.sign() ==false)
+		return false;
+	else if(x1.sign()==false && x2.sign() ==true)
+		return true;
+	else
+		return (tLong1 >= tLong2);
 }
 
 bool operator < (const Czas x1, const Czas x2){
-	return ( (x1.h() < x2.h()) && (x1.m() < x2.m()) && (x1.s() < x2.s()) && (x1.ms() < x2.ms()) );
+	long int	tLong1 = x1;
+	long int	tLong2 = x2;
+	if (x1.sign()==true && x2.sign() ==false)
+		return true;
+	else if(x1.sign()==false && x2.sign() ==true)
+		return false;
+	else
+		return (tLong1 < tLong2);
 }
 
 bool operator <= (const Czas x1, const Czas x2){
-	return ( (x1.h() <= x2.h()) && (x1.m() <= x2.m()) && (x1.s() <= x2.s()) && (x1.ms() <= x2.ms()) );
+	long int	tLong1 = x1;
+	long int	tLong2 = x2;
+	if (x1.sign()==true && x2.sign() ==false)
+		return true;
+	else if(x1.sign()==false && x2.sign() ==true)
+		return false;
+	else
+		return (tLong1 <= tLong2);
 }
 
 bool operator == (const Czas x1, const Czas x2){
-	return ( (x1.h() == x2.h()) && (x1.m() == x2.m()) && (x1.s() == x2.s()) && (x1.ms() == x2.ms()) );
+	long int	tLong1 = x1;
+	long int	tLong2 = x2;
+	return (x1.sign() == x2.sign() && tLong1 == tLong2);
 }
 
 bool operator != (const Czas x1, const Czas x2){
-	return ( (x1.h() != x2.h()) && (x1.m() != x2.m()) && (x1.s() != x2.s()) && (x1.ms() != x2.ms()) );
+	long int	tLong1 = x1;
+	long int	tLong2 = x2;
+	return ( x1.sign() != x2.sign() || tLong1 != tLong2 );
 }
 

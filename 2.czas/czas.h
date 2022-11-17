@@ -12,7 +12,6 @@
 
 //--------------------------------------------------------------
 #include <cmath>
-using namespace std;
 
 //--------------------------------------------------------------
 
@@ -76,11 +75,17 @@ private:
 		MM = x % 100;
 		x /= 100;
 		HH = x % 100;
+
+		if(x < 0 ) m_sign = true;
+		else m_sign = false;
 	}
 
 	void timeFromDouble(double x) {
 		HH = MM = SS = sss = 0;
 		sss = x * 1000;
+
+		if(x < 0 ) m_sign = true;
+		else m_sign = false;
 	}
 
 	long int convertToLongInt() const {
